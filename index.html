@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Birthday, Bestie! 🎉</h1>
+
+        <!-- Birthday Image -->
+        <img id="birthdayImage" src="1.jpg" alt="Birthday Cake" onerror="this.onerror=null; this.src='fallback.jpg';">
+
+        <!-- Countdown Timer -->
+        <p id="birthdayMessage">MAY THIS YEAR YOU GET ONE STEP CLOSR TO YOUR DREAMS </p>
+        <div id="countdown">Loading countdown...</div>
+
+        <!-- Birthday Wishes Input -->
+        <h3>Leave a Birthday Wish 🎂</h3>
+        <input type="text" id="wishInput" placeholder="Write a birthday wish...">
+        <button id="submitWish">Send</button>
+        <ul id="wishList"></ul>
+
+        <!-- Surprise Button -->
+        <button id="surpriseButton">Click for a Surprise!</button>
+        <div id="surpriseMessage" class="hidden">🎉 You're the best! 🎉</div>
+
+        <!-- Secret Message Reveal -->
+        <h3>Enter the Secret Code 🔐</h3>
+        <input type="password" id="secretInput" placeholder="Enter code">
+        <button id="revealButton">Reveal</button>
+        <p id="secretMessage" class="hidden">🎊 Happy Birthday! 🎊</p>
+
+        <!-- Confetti Celebration Button -->
+        <button id="partyButton">🎈 Celebrate!</button>
+
+        <!-- Photo Slideshow -->
+        <h3>Memories Slideshow 📸</h3>
+        <div class="slideshow">
+            <img src="1.jpg" class="slide">
+            <img src="2.jpg" class="slide">
+            <img src="3.jpg" class="slide">
+        </div>
+
+        <!-- Birthday Song -->
+        <audio id="birthdayMusic" autoplay loop>
+            <source src="birthdaysong.in_its-your-birthday-song.mp3" type="audio/mpeg">
+        </audio>
+        <button id="musicToggle">🔊 Pause Music</button>
+        
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.0.0"></script>
+    <script src="script.js"></script>
+</body>
+</html>
